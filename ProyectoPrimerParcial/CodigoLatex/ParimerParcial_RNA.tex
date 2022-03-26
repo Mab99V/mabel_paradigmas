@@ -1,0 +1,155 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+%\usepackage {tikz}
+\usepackage{tkz-graph}
+\GraphInit[vstyle = Shade]
+\tikzset{
+  LabelStyle/.style = { rectangle, rounded corners, draw,
+                        minimum width = 2em, fill = yellow!50,
+                        text = red, font = \bfseries },
+  VertexStyle/.append style = { inner sep=5pt,
+                                font = \normalsize\bfseries},
+  EdgeStyle/.append style = {->, bend left} }
+\usetikzlibrary {positioning}
+%\usepackage {xcolor}
+\definecolor {processblue}{cmyk}{0.96,0,0,0}
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Short title]{Reporte tecnico, Proyecto Hopfield} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Mabel Pérez Garibay} % Your name
+\institute[Universidad Veracruzana] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Paradigmas de Programacion
+\medskip
+}
+
+
+
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\frametitle{Menu} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+
+\section{Introduccion}
+\begin{frame}{¿De que trata el proyecto?}
+    \begin{itemize}
+        \item Este proyecto sera realizado para la evaluacion del primer parcial de la materia de Paradigmas de Programacion.
+        \item Este tratara de la elaboracion de una red Hopfield, dichas redes fueron desarroolladas en los años 80, pero ¿que es?, son llamadas redes recursivas o redes recurrentes que simulan memoria asociativa con unidades binarias. Podemos definir memoria asociativa como almacenamiento y recuperación de información por asociación con otras informaciones, un dispositivo de almacenamiento de información se llama memoria asociativa si permite recuperar información a partir de conocimiento parcial de su contenido, sin saber su localización de almacenamiento. A veces también se le llama memoria de direccionamiento por contenido.
+    \end{itemize}
+\end{frame}
+\section{Desarrollo}
+\begin{frame}{¿Que y Como se hara?}
+    Para la elaboracion de dicho proyecto se tiene paneado hacer primero un prototipo en la herramienta matlab, dicho prototipo sera utilizando personajes de anime y para entrega final sera elaborada en el lenguaje de programacion c++.
+    En ambas se almacenara en una matriz 10 personajes de anime, su objetivo sera que seleccione los  patrones el mas cercano al que se parezca entre toda la matriz de 7x12.
+ \begin{figure}[H]
+  
+ \end{figure}
+\end{frame}
+
+\section{Conclusiones}
+\begin{frame}{Conclusiones Finales}
+\begin{itemize}
+        \item Una red Hopfield tiene ventajas y desventajas, una de las principales desventajas empezando por lo malo es que practicamente no existe tiempo de entrenamiento, ya que éste no es un proceso adaptativo, sino simplemente el cálculo de una matriz y una ventaja es que  son bastante tolerantes al ruido, cuando funcionan como memorias asociativas.  En conclusion se esperan resultados donde efectivamente los patrones buscados sean seleccionados entre los parecidos.
+    \end{itemize}
+\end{frame}
+
+
+
+
+\end{document}
+
